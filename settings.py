@@ -61,5 +61,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'notes',
+    'django_extensions',
     'vendor',
 )
