@@ -29,15 +29,6 @@
 <!-- For Retina displays -->
     <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="media/css/x2/style.css">
 
-<!-- JavaScript -->
-    <script src="http://www.modernizr.com/downloads/modernizr.js"></script>
-    <script>
-    function trapEvent(event) {
-    // Don't touch that dial...
-        event.preventDefault() ;
-    }
-    </script>
-    <script type="text/javascript" src="/media/js/notes.js"></script>
 <!-- Application Metadata - for cataloging -->
     <meta name="description" content="A resolution agnostic web-based note manager.">
     <meta name="author" content="D. Rimron  - d/arran@xalior.com">
@@ -107,7 +98,16 @@
 <div id="container">
 {% block content %}{% endblock %}
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
+<!-- JavaScript -->
+    <script src="http://www.modernizr.com/downloads/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
+    <script>
+    function trapEvent(event) {
+    // Don't touch that dial...
+        event.preventDefault() ;
+    }
+    </script>
+    <script type="text/javascript" src="/media/js/notes.js"></script>
 {% block tailscript %}{% endblock %}
 </body>
 </html>
