@@ -1,21 +1,35 @@
 header {
-    height: 44px;
+    height: 40px;
     width: 100%;
+}
+    
+header h1 {
+	text-align: center;
 }
 
 #container {
-    width: 80%;
+    width: 90%;
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
 }
 
-#backWrapper {
-    float: left;
+#backButton {
+	left: 2px;
+	width: 60px;
 }
 
-#settingsWrapper {
-    float: right;
+#settingsButton {
+	right: 2px;
+	width: 34px;
+}
+
+#backButton, #settingsButton {
+	position: absolute;
+	text-align: center;
+	top: 4px;
+	height: 24px;
+	margin: 2px;
 }
 
 #settingsPopup {
@@ -28,10 +42,6 @@ header {
     border: 1px solid grey;
     margin-bottom: 1em;
     padding-bottom: 1em;
-}
-
-.list {
-    border: 1px solid grey;
 }
 
 .list h2 {
