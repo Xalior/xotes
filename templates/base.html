@@ -15,8 +15,6 @@
 <head>
 <!-- The name of the app on the home screen -->
     <title>{% block title %}Xotes{% endblock %}</title>
-<!-- Styles -->
-    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <!-- For all browsers -->
     <link rel="stylesheet" href="media/css/style.css">
     <link rel="stylesheet" media="print" href="media/css/print.css">
@@ -31,7 +29,6 @@
 <!-- For Retina displays -->
     <link rel="stylesheet" media="only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="media/css/x2/style.css">
 
-    <link rel="stylesheet" media="screen" href="media/css/theme/default/style.css"">
 <!-- JavaScript -->
     <script src="http://www.modernizr.com/downloads/modernizr.js"></script>
     <script>
@@ -63,6 +60,8 @@
 <!--Microsoft. -->
 <!-- http://t.co/y1jPVnT -->
     <link rel="canonical" href="/">
+<!-- Theme Styles -->
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <style>
     body {
         margin: 0px ;
@@ -75,13 +74,14 @@
         font-family: 'Shadows Into Light Two', cursive;
         font-size: 18px ;
     }
+    <link rel="stylesheet" media="screen" href="media/css/theme/default/style.css">
     </style>
 
 </head>
 <body ontouchmove="trapEvent(event);">
 <header>
 <div id="navbar">
-  <div id="backWrapper>
+  <div id="backWrapper">
     <a id="backButton" href="/">Home</a>
   </div>
   <h1>Xotes</h1>
