@@ -37,7 +37,7 @@
         event.preventDefault() ;
     }
     </script>
-    <script type="text/javascript" src="/media/notes.js"></script>
+    <script type="text/javascript" src="/media/js/notes.js"></script>
 <!-- Application Metadata - for cataloging -->
     <meta name="description" content="A resolution agnostic web-based note manager.">
     <meta name="author" content="D. Rimron  - d/arran@xalior.com">
@@ -76,7 +76,6 @@
     }
     </style>
     <link rel="stylesheet" media="screen" href="media/css/theme/default/style.css">
-
 </head>
 <body ontouchmove="trapEvent(event);">
 <header>
@@ -108,7 +107,7 @@
 <div id="container">
 {% block content %}{% endblock %}
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">
 {% block tailscript %}{% endblock %}
 </body>
 </html>
