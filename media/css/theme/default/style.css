@@ -3,16 +3,45 @@ body {
 }
 
 header {
-	background-color: #5780B6;
+    background: #244774; /* for non-css3 browsers */
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#5780B6', endColorstr='#244774'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#5780B6), to(#244774)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #5780B6,  #244774); /* for firefox 3.6+ */
 }
 
 #backButton, #settingsButton {
-	border: 1px solid #0A0A47;
 	-webkit-border-radius: 4px;
+    color: #1D0945;
+    text-decoration: none;
+    border-top: solid 1px #6F8EB6;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    padding-top: 2px;
 }
 
 #backButton {
+    background: #7676BA; /* for non-css3 browsers */
+    filter: url(img/home.png) no-repeat center, progid:DXImageTransform.Microsoft.gradient(startColorstr='#5780B6', endColorstr='#2A3B50'); /* for IE */
+    background: url(img/home.png) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(#5780B6), to(#2A3B50)); /* for webkit browsers */
+    background: url(img/home.png) no-repeat center, -moz-linear-gradient(top,  #5780B6,  #2A3B50); /* for firefox 3.6+ */
+    padding-left: 2px;
 	-webkit-border-radius: 14px 4px 4px 14px;
+}
+
+#settingsButton {
+    background: url(img/cog.png) no-repeat center, #7676BA; /* for non-css3 browsers */
+    filter: url(img/cog.png) no-repeat center, progid:DXImageTransform.Microsoft.gradient(startColorstr='#5780B6', endColorstr='#2A3B50'); /* for IE */
+    background: url(img/cog.png) no-repeat center, -moz-linear-gradient(top,  #5780B6,  #2A3B50); /* for firefox 3.6+ */
+    background: url(img/cog.png) no-repeat center, -webkit-gradient(linear, left top, left bottom, from(#5780B6), to(#2A3B50));
+}
+
+#backButton span,
+#settingsButton span {
+    width: 16px;
+    height: 16px;
+    display: none;
 }
 
 .list {

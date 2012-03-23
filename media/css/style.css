@@ -16,15 +16,14 @@ header h1 {
 
 #backButton {
 	left: 2px;
-	width: 60px;
 }
 
 #settingsButton {
 	right: 2px;
-	width: 34px;
 }
 
 #backButton, #settingsButton {
+	width: 34px;
 	position: absolute;
 	text-align: center;
 	top: 4px;
